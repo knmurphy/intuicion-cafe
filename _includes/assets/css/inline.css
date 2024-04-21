@@ -194,3 +194,7 @@ button {
 		font-size: 1.1rem;
 	}
 }
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
