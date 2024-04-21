@@ -1,8 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
-	--primary: blue;
-	--secondary: white;
+	--primary: #5a3429;
+	--secondary: #f9f5ed;
 	--background: #FFF0EB;
 }
+
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -195,6 +200,4 @@ button {
 	}
 }
 
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+
