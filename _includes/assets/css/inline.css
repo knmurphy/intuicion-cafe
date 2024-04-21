@@ -3,9 +3,9 @@
 @import 'tailwindcss/utilities';
 
 :root {
-	--primary: #5a3429;
+	--primary: #f6f6f6;
 	--secondary: #f9f5ed;
-	--background: #FFF0EB;
+	--background: #121212;
 }
 
 
@@ -25,6 +25,7 @@ body {
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--background);
+	color:var(--primary)
 }
 
 main {
@@ -117,7 +118,7 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-	background-color: white;
+	background-color: #fb8814;
 }
 
 /* Posts List */
