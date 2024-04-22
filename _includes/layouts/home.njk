@@ -6,21 +6,37 @@ permalink: /index.html
             <div class="mb-8">
                 <img src="/static/img/intuicion-cafe-roasting.jpg" alt="A person roasting coffee beans, stirring them in a large roaster" class="mx-auto">
             </div>
-            <div class="mb-8">
+            {# <div class="mb-8">
                 <h2 class="text-5xl font-bold uppercase tracking-widest">Pedir Café</h2>
-            </div>
-            <div class="mb-8">
-                <p class="text-2xl font-bold">1/2 KILO $200</p>
-                <p class="text-2xl font-bold">1 KILO $400</p>
-            </div>
-            <div class="text-center">
+            </div> #}
+            <a href="URL_FOR_HALF_KILO">
+                <div class="mb-8">
+                    <div class="grid grid-cols-2 gap-4 items-center justify-center">
+                        <div class="items-center justify-center text-center bg-gray-200 p-4">
+                            <p class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">1/2 KILO</p>
+                            <p class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">$200</p>
+                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 mb-2 text-sm md:text-base lg:text-lg">
+                               Comprar ahora
+                            </button>
+                        </div>
+                        <div class="items-center justify-center text-center bg-gray-200 p-4">
+                            <p class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">1 KILO</p>
+                            <p class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">$400</p>
+                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 mb-2 text-sm md:text-base lg:text-lg">
+                                Comprar ahora
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            {# <div class="text-center">
                 <button class="focus:outline-none">
                     <i class="fas fa-chevron-down"></i>
                 </button>
             </div>
             <section class="mb-8">
                 {% include "components/order-form.njk" %}
-            </section>
+            </section> #}
 
 
 
