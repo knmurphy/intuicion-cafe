@@ -108,6 +108,7 @@ header nav li a[href]:not(:hover) {
 
 header nav li a[data-current="current item"] {
 	background-color: #1e1d1c;
+	color: white !important;
 }
 
 /* Posts List */
