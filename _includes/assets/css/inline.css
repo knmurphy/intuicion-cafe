@@ -107,7 +107,7 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-	background-color: #fb8814;
+	background-color: #1e1d1c;
 }
 
 /* Posts List */
