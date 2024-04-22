@@ -10,4 +10,4 @@ eleventyNavigation:
   order: 3
 ---
 
-En nuestro café, ofrecemos algo más que una excelente taza de café; también puedes participar directamente con nuestro tostador de café de 1 kilo. Perfecto tanto para aficionados como para tostadores experimentados, puedes alquilar tiempo en nuestra máquina para tostar tus propios granos a tu gusto. Utiliza el programador que se encuentra a continuación para seleccionar un horario que te convenga y experimenta el arte de tostar café de primera mano.
+Agenda tu cita y ven a tostar. Capacidad de nuestro tostados (Aillio Bullet V2) desde 250g a 850g, precio por batch $35.00 pesos mexicanos. Contamos con todo el equipo para catar después de tostar. Venta de café en verde y molino para café a granel.
