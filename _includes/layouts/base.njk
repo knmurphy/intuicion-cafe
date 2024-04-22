@@ -1,23 +1,29 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="es">
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="bg-white text-black antialiased">
+		<div class="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
+			<header>
+			<div class="w-full max-w-screen-md">
+				<div class="flex justify-between items-center mb-8">
+					<h1 class="text-2xl font-bold uppercase tracking-widest"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+					<h2 class="text-xs font-bold tracking-widest"><a href="https://maps.app.goo.gl/c7eWK2YFTaj7gWHC9">CDMX 📍</a></h2>
+				</div>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{# {% include "components/nav.njk" %} #}
-		</header>
+			 {% include "components/nav.njk" %}
+			</div>
+			</header>
+		
+
 
 		<main>
 			{{ layoutContent | safe }}
 		</main>
 
 		{% include "components/footer.njk" %}
-
+	</div>
 	</body>
 
 </html>
