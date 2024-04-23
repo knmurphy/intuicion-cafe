@@ -3,20 +3,22 @@
 
 	{% include "components/head.njk" %}
 
-	<body class="bg-white text-black antialiased">
-		<div class="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
-			<header>
-			<div class="w-full max-w-screen-md">
-				<div class="flex justify-start items-center mb-4 mt-4">
-					<a href="https://maps.app.goo.gl/c7eWK2YFTaj7gWHC9"><h2 class="text-xs font-bold tracking-widest">CDMX 📍</h2></a>
-				</div>
-			 {# {% include "components/nav.njk" %} #}
-			</div>
-			</header>
-		
+	<body class="bg-white text-black antialiased mx-auto max-w-screen-md">
+		<div class="flex flex-col p-4 bg-white mx-auto">
+			{% if section != 'inicio' %}
+				<header>
+					<div class="w-full max-w-screen-md">
+						<div class="flex justify-evenly items-center">
+							<h1 class="text-2xl font-bold uppercase tracking-widest"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+							<a href="https://maps.app.goo.gl/c7eWK2YFTaj7gWHC9"><h2 class="text-xs font-bold tracking-widest">CDMX 📍</h2></a>
+						</div>
+						{# {% include "components/nav.njk" %} #}
+					</div>
+				</header>
+			{% endif %}
 
 
-		<main>
+		<main class="mx-auto max-w-screen-md">
 			{{ layoutContent | safe }}
 		</main>
 
