@@ -97,6 +97,11 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  // Custom filter to split a string into an array
+  eleventyConfig.addFilter("split", function(value, separator) {
+      return value.split(separator);
+  });
+
   return {
     templateFormats: ["md", "njk", "liquid"],
 
