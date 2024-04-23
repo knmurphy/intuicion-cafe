@@ -191,3 +191,12 @@ button {
 }
 
 
+/* Blockquote Styles */
+blockquote {
+	margin: 1em 0;
+	padding: 1em;
+	border-left: 4px solid var(--primary);
+	background-color: var(--secondary);
+	color: var(--primary);
+	font-style: italic;
+}
