@@ -8,6 +8,7 @@ permalink: /tostado/index.html
 eleventyNavigation:
   key: Tostado
   order: 3
+lang: es
 ---
 
 Capacidad de nuestro tostados (Aillio Bullet V2) __desde 250g a 850g__, precio por batch __$35.00__ pesos mexicanos. Contamos con todo el equipo para catar después de tostar. Venta de café en verde y molino para café a granel.
