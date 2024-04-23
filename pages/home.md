@@ -1,6 +1,6 @@
 ---
 layout: layouts/home.njk
-title: Intuición Café - café tostado
+title: Intuición Café & Jaropes - tostadora de cafe
 date: 2016-01-01T00:00:00.000Z
 permalink: /
 eleventyNavigation:
