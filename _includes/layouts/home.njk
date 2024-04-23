@@ -3,11 +3,22 @@ layout: layouts/base.njk
 section: inicio
 permalink: /index.html
 ---
-            <div class="mb-8">
+            {# <div class="mb-8">
                 <img src="/static/img/intuicion-cafe-roasting.jpg" alt="A person roasting coffee beans, stirring them in a large roaster" class="mx-auto">
+            </div> #}
+
+            <div class="relative mb-8">
+                <img src="/static/img/intuicion-cafe-roasting.jpg" alt="A person roasting coffee beans, stirring them in a large roaster" class="w-full">
+                <div class="absolute top-0 left-0 w-full h-full flex items-start justify-start" style="background-color: rgba(0, 0, 0, 0.3);">
+                    <div class="text-left absolute top-20 left-5">
+                        <h1 class="text-white text-5xl font-bold">INTUICIÓN CAFÉ &</h1>
+                        <h2 class="text-white text-3xl">JAROPES</h2>
+                        <p class="text-red-600 font-bold">CDMX</p>
+                    </div>
+                </div>
             </div>
             <div class="mb-8">
-                <div class="grid grid-cols-2 gap-2"> {# Decreased the gap from gap-4 to gap-2 #}
+                <div class="grid grid-cols-2 gap-4">
                     <a href="https://pago.clip.mx/dafc8b68-2520-4e14-bc31-66036487017c">
                         <div class="items-center justify-center text-center bg-gray-200 p-4">
                             <p class="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">200G</p>
