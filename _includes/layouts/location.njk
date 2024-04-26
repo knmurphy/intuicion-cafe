@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+section: location
+---
+
+<section class="mb-8">
+  <img class="w-full h-48 md:h-96 object-cover rounded-lg shadow-lg mb-4" src="https://via.placeholder.com/150" alt="placeholder">
+  <div class="text-center">
+    <h2 class="text-3xl md:text-5xl font-bold text-amber-300">{{ title }}</h2>
+    <p class="text-xl md:text-2xl text-amber-200">{{ address }}</p>
+  </div>
+</section>
+
+<section class="bg-brown-100 py-8 px-4 md:py-12 md:px-8 shadow-lg rounded-xl">
+  <div class="max-w-xl md:max-w-7xl mx-auto text-center">
+    <div class="space-y-6">
+      {{ layoutContent | safe }}
+    </div>
+  </div>
+</section>
