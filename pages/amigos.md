@@ -10,4 +10,4 @@ permalink: /amigos/index.html
   order: 3-->
 ---
 
-Suscríbete por dos meses por solo $500 y recibe $500 en café tostado entregado en tu casa.
+Invierte por dos meses por solo $5000 y recibe $500 en café tostado entregado en tu casa.
