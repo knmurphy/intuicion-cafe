@@ -1,0 +1,59 @@
+<div class="max-w-lg mx-auto bg-white shadow-lg p-6 mb-8">
+  <form id="amigo-signup-form" name="amigo-signup-form" method="POST" action="POST" netlify-honeypot="bot-field">
+    <p class="hidden">
+      <label>No llenes esto si eres humano: <input name="bot-field"/></label>
+    </p>
+    <div>
+      <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+      <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Por favor, introduce una dirección de correo válida" required class="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-4">
+      <label for="first-name" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+      <input type="text" id="first-name" name="first_name" pattern="[A-Za-z]{2,}" title="El nombre debe tener al menos 2 caracteres" required class="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-4">
+      <label for="last-name" class="block text-gray-700 text-sm font-bold mb-2">Apellido:</label>
+      <input type="text" id="last-name" name="last_name" pattern="[A-Za-z]{2,}" title="El apellido debe tener al menos 2 caracteres" required class="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-4">
+      <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Número de Teléfono:</label>
+      <input type="tel" id="phone" name="phone" pattern="\+?[\d\s-]+" title="Por favor, introduce un número de teléfono válido" required class="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-4">
+      <label for="address" class="block text-gray-700 text-sm font-bold mb-2">Dirección:</label>
+      <input type="text" id="address" name="address" title="Por favor, introduce una dirección válida" required class="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+<div class="mt-6">
+  <span class="block text-gray-700 text-sm font-bold mb-2">¿Por cuánto tiempo te gustaría suscribirte?</span>
+  <div class="flex space-x-4">
+    <label class="inline-flex items-center bg-blue-500 text-white px-3 py-1 rounded-lg cursor-pointer hover:bg-blue-700">
+      <input type="radio" name="subscription_duration" value="2" class="hidden" required>
+      <span>2 meses</span>
+    </label>
+    <label class="inline-flex items-center bg-blue-500 text-white px-3 py-1 rounded-lg cursor-pointer hover:bg-blue-700">
+      <input type="radio" name="subscription_duration" value="4" class="hidden" required>
+      <span>4 meses</span>
+    </label>
+    <label class="inline-flex items-center bg-blue-500 text-white px-3 py-1 rounded-lg cursor-pointer hover:bg-blue-700">
+      <input type="radio" name="subscription_duration" value="6" class="hidden" required>
+      <span>6 meses</span>
+    </label>
+  </div>
+</div>
+    <div class="flex mt-4">
+    <div class="flex-none">
+        <input type="checkbox" id="terms" name="terms" required class="form-checkbox text-blue-600">
+    </div>
+    <div class="flex-grow pl-2">
+        <label for="terms" class="text-gray-700 text-sm">Acepto los <a href="link-to-terms.html" target="_blank" class="text-blue-500 underline">términos y condiciones</a>.</label>
+    </div>
+</div>
+
+    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline mt-4 w-full">Registrar</button>
+  </form>
+</div>
