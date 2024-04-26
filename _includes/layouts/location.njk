@@ -4,14 +4,18 @@ section: location
 ---
 
 <section class="mb-8">
-  <img class="w-full h-48 md:h-96 object-cover rounded-lg shadow-lg mb-4" src="https://via.placeholder.com/150" alt="placeholder">
+  <img class="w-full h-48 md:h-96 object-cover rounded-lg shadow-lg mb-4" src="/static/img/cover_local19.jpeg" alt="Local 19 cafe">
   <div class="text-center">
-    <h2 class="text-3xl md:text-5xl font-bold text-amber-300">{{ title }}</h2>
-    <p class="text-xl md:text-2xl text-amber-200">{{ address }}</p>
+    <!-- Adjusted text color for title to a warmer, softer brown -->
+    <h2 class="text-3xl md:text-5xl font-bold text-brown-700">{{ title }}</h2>
+    <!-- Adjusted address text, made it left-aligned and clickable link to Google Maps -->
+    <p class="text-left text-xl md:text-2xl text-brown-600"><a href="https://maps.google.com/?q={{ address }}" target="_blank">{{ address }}</a></p>
+    <!-- Added Instagram link -->
+    <p class="text-left text-lg text-brown-600"><a href="{{ instagram }}" target="_blank">Follow us on Instagram</a></p>
   </div>
 </section>
 
-<section class="bg-brown-100 py-8 px-4 md:py-12 md:px-8 shadow-lg rounded-xl">
+<section class="bg-warm-gray-50 py-8 px-4 md:py-12 md:px-8 shadow-lg rounded-xl">
   <div class="max-w-xl md:max-w-7xl mx-auto text-center">
     <div class="space-y-6">
       {{ layoutContent | safe }}

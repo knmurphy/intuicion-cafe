@@ -1,6 +1,6 @@
 ---
 layout: layouts/location.njk
-title: Local 19 - Local diecinueve
+title: Local 19
 metaDescription: Dentro del mercado San Juan encontrarás una barra de café donde tostamos, degustamos y experimentamos juntos.
 section: location
 address: Mercado San Juan, Calle Ernesto Pugibet 21, Local 19, Colonia Centro, Ciudad de México
