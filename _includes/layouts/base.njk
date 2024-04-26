@@ -6,16 +6,14 @@
 	<body class="bg-white text-black antialiased">
 		<div class="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
 			<header class="text-center">
-				<div class="w-full max-w-screen-md mx-auto">
-					<div class="flex justify-center items-center mb-4 mt-4">
-						<a href="{{ '/' | url }}"><img src="{{ '/static/img/intuicion-logo.png' | url }}" alt="{{ metadata.title }} Logo" class="mx-auto" style="width:50%;height:auto;"></a>
-						<a href="https://maps.app.goo.gl/c7eWK2YFTaj7gWHC9" style="margin-right: 5rem;"><h2 class="text-xs font-bold tracking-widest">CDMX 📍</h2></a>
-					</div>
-					{# {% include "components/nav.njk" %} #}
-				</div>
-			</header>
-
-
+										<div class="w-full max-w-screen-md mx-auto">
+											<div class="flex justify-center items-center mb-4 mt-4">
+												<a href="{{ '/' | url }}"><img src="{{ '/static/img/intuicion-logo.png' | url }}" alt="{{ metadata.title }} Logo" class="mx-auto" style="width:70%;height:auto;"></a>
+												<a href="https://maps.app.goo.gl/c7eWK2YFTaj7gWHC9" style="margin-right: 4.5rem;"><h2 class="text-sm font-bold tracking-widest">CDMX 📍</h2></a>
+											</div>
+											{# {% include "components/nav.njk" %} #}
+										</div>
+									</header>
 
 		<main>
 			{{ layoutContent | safe }}
