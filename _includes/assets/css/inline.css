@@ -196,18 +196,24 @@ button {
     }
 }
 
-
 p {
     @apply text-base leading-6 text-gray-700;
+    font-family: "Vollkorn", serif;
 }
 
 /* Blockquote Styles */
 blockquote {
-	margin: 1em 0;
-	padding: 1em;
-	border-left: 4px solid var(--primary);
-	background-color: var(--secondary);
-	color: var(--primary);
-	font-style: italic;
+    margin: 1em 0;
+    padding: 1em;
+    border-left: 4px solid var(--primary);
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-style: italic;
 }
 
+.vollkorn-custom {
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
