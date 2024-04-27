@@ -101,7 +101,13 @@ module.exports = function (eleventyConfig) {
     "md",
     markdownIt(options).use(markdownItAnchor, opts),
   );
-
+  // Add a shortcode for RoasWorld profile iframes
+  eleventyConfig.addShortcode(
+    "perfil",
+    function (src, title, width = "640", height = "480") {
+      return `<iframe src="${src}" title="${title}" frameborder="0" sandbox="allow-scripts allow-same-origin" allowfullscreen width="${width}" height="${height}"></iframe>`;
+    },
+  );
   return {
     templateFormats: ["md", "njk", "liquid"],
 
