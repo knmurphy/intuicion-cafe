@@ -1080,3 +1080,47 @@ blockquote {
     font-weight: 700;
     font-style: normal;
 }
+
+/*
+#bouncing-sticker {
+    position: fixed;
+    width: 100px; /* Adjust based on your sticker's size
+    height: 100px; /* Adjust based on your sticker's size
+    z-index: -0.5; /* Ensure it does not interfere with other clickable elements
+}
+*/
+/* Radio Button as Button */
+.radio-as-button {
+    display: none;
+}
+
+.radio-as-button + label {
+    background-color: #000; /*Default background*/
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid transparent; /*Adjust as per preference*/
+    cursor: pointer;
+}
+
+.radio-as-button:checked + label {
+    background-color: #4a90e2; /* Checked state */
+    border-color: #4a90e2;
+}
+
+/* Specific Styles for Wash-type Labels */
+.label-lavado {
+    background-color: mediumPurple; /* Placeholder for specific color */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
+
+.label-natural {
+    background-color: mediumBlue; /* Placeholder for specific color */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}

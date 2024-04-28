@@ -4,33 +4,38 @@ section: inicio
 permalink: /index.html
 ---
             <div class="mb-8">
-                <img src="/static/img/intuicion-cafe-roasting.jpg" alt="A person roasting coffee beans, stirring them in a large roaster" class="mx-auto">
+    <img src="/static/img/intuicion-cafe-roasting.jpg" alt="A person roasting coffee beans, stirring them" class="mx-auto">
+</div>
+<div class="mb-8">
+    <div class="grid grid-cols-2 gap-4">
+        <!-- Product 1 -->
+        <div class="bg-gray-200 p-4 flex flex-col items-center justify-center text-center">
+            <div class="bg-medium-purple text-white font-bold py-2 px-4 mb-4" style="background-color: #9370DB; width: 100%;">Lavado</div>
+            <div class="flex mb-4">
+                <input type="radio" id="size200g-lavado" name="sizeLavado" value="200G" class="hidden radio-as-button" checked>
+                <label for="size200g-lavado" style="border: 1px solid black;" class="text-black font-bold py-1 px-2 mr-2 cursor-pointer">200 Gr</label>
+
+                <input type="radio" id="size1kg-lavado" name="sizeLavado" value="1KG" class="hidden radio-as-button">
+                <label for="size1kg-lavado" style="border: 1px solid black;" class=" text-black font-bold py-1 px-2 cursor-pointer">1 KG</label>
             </div>
-            <div class="mb-8">
-                <div class="grid grid-cols-2 gap-4">
-                    <a href="{# https://pago.clip.mx/dafc8b68-2520-4e14-bc31-66036487017c #}">
-                        <div class="items-center justify-center text-center bg-gray-200 p-4">
-                            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">200G</p>
-                            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">$200 (más entrega)</p>
-                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 mb-2 text-sm md:text-base lg:text-lg w-full h-full">
-                                Comprar ahora
-                            </button>
-                        </div>
-                    </a>
-                    <a href="{# https://pago.clip.mx/dafc8b68-2520-4e14-bc31-66036487017c #}">
-                        <div class="items-center justify-center text-center bg-gray-200 p-4">
-                            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">1 KILO</p>
-                            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">$400 (más entrega)</p>
-                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 mb-2 text-sm md:text-base lg:text-lg w-full h-full">
-                                Comprar ahora
-                            </button>
-                        </div>
-                    </a>
-                </div>
+            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">$200 (más entrega)</p>
+            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 text-sm md:text-base lg:text-lg w-full">Comprar ahora</button>
+        </div>
+        <!-- Product 2 -->
+        <div class="bg-gray-200 p-4 flex flex-col items-center justify-center text-center">
+            <div class="bg-medium-navy text-white font-bold py-2 px-4 mb-4" style="background-color: #000080; width: 100%;">Natural</div>
+            <div class="flex mb-4">
+                <input type="radio" id="size200g-natural" name="sizeNatural" value="200G" class="hidden radio-as-button" checked>
+                <label for="size200g-natural" class="text-black font-bold py-1 px-2 mr-2 cursor-pointer">200G</label>
+
+                <input type="radio" id="size1kg-natural" name="sizeNatural" value="1KG" class="hidden radio-as-button">
+                <label for="size1kg-natural" class="text-black font-bold py-1 px-2 cursor-pointer">1 KG</label>
             </div>
-            {# <section class="mb-8">
-                {% include "components/order-form.njk" %}
-            </section> #}
+            <p class="text-1xl md:text-3xl lg:text-3xl font-bold mb-4">$400 (más entrega)</p>
+            <button class="bg-black hover:bg-gray-800 text-white font-bold py-1 px-2 text-sm md:text-base lg:text-lg w-full">Comprar ahora</button>
+        </div>
+    </div>
+</div>
 <div class="flex flex-wrap justify-center gap-4 mt-8">
     <a href="/tostado/" class="bg-gray-200 hover:bg-gray-300 text-black font-bold py-2 px-4 w-full text-center md:w-auto">
        Agenda tu cita y ven a tostar

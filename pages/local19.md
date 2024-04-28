@@ -14,7 +14,7 @@ eleventyNavigation:
     order: 2
 ---
 
-Dentro del surreal mercado de San Juan, se encuentra LOCAL 19, un osasis urbano para amantes del café, cada sorbo es una historia.
+Dentro del surreal mercado de San Juan, se encuentra Local 19, un osasis urbano para amantes del café, cada sorbo es una historia.
 
 La intención del espacio es sumergirte en un viaje sensorial único. Te guiaremos a través de una experiencia de degustación que despertará tus sentidos. Albergamos y colaboramos con Intuición Café y Jaropes para asegurar la frescura de nuestros granos tostados y el perfil óptimo en tu taza.
 
