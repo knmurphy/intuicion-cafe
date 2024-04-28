@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: tostados
 ---
 
-<article class="max-w-4xl mx-auto my-6 p-6 bg-white rounded-lg shadow-md">
+<article class="max-w-4xl mx-auto my-6 p-2 bg-white">
   <h1 class="text-3xl font-bold leading-tight">{{ title }}</h1>
   <p class="mt-2 text-sm text-gray-600">
     <small>
@@ -15,7 +15,7 @@ section: tostados
     {{ layoutContent | safe }}
   </div>
 
-  <div class="mt-6 p-4 bg-gray-50 rounded">
+  <div class="mt-6">
     <!-- Coffee Details -->
     <dl class="grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-3">
     <!-- Producer Photo -->
@@ -96,8 +96,78 @@ section: tostados
     {% endfor %}
     </p>
   {% endif %}
-
 </article>
+
+<div class="max-w-sm mx-auto bg-white p-6 rounded-lg hard-shadow">
+    <h1 class="text-4xl text-center font-bold mb-6">{{ cafe.region }}</h1>
+  <div class="bg-purple-600 text-white p-4 rounded-lg mb-6">
+    <p class="text-xs uppercase font-bold">{{cafe.finca}} {{ cafe.region }}</p>
+    <h2 class="text-3xl font-bold my-2 uppercase">{{ cafe.process }}</h2>
+    <p class="text-xs font-bold uppercase">{{ cafe.origin }} / {{ cafe.grower }}</p>
+  </div>
+  <div class="grid grid-cols-3 gap-4 mb-6">
+<div class="coffee-detail">
+        <dt class="font-semibold">Origin</dt>
+        <dd>{{ cafe.origin }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Region</dt>
+        <dd>{{ cafe.region }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Finca</dt>
+        <dd>{{ cafe.finca }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Grower</dt>
+        <dd>{{ cafe.grower }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Tostador</dt>
+        <dd>{{ cafe.tostador }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Altitude</dt>
+        <dd>{{ cafe.altitude }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Varietal</dt>
+        <dd>{{ cafe.varietal }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Bean</dt>
+        <dd>{{ cafe.bean }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Process</dt>
+        <dd>{{ cafe.process }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Roast</dt>
+        <dd>{{ cafe.roast }}</dd>
+      </div>
+      <div class="coffee-detail">
+      <dt class="font-semibold">Roast Date</dt>
+      <dd><time datetime="{{ cafe.roastDate | machineDate }}">{{ cafe.roastDate | readableDate }}</time></dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Developed</dt>
+        <dd>{{ cafe.developed }}</dd>
+      </div>
+      <div class="coffee-detail">
+        <dt class="font-semibold">Notes</dt>
+        <dd>{{ cafe.notes }}</dd>
+      </div>
+    </dl>
+  </div>
+  <div class="mb-4">
+    <input type="text" placeholder="200 G" class="border-2 border-black w-full p-2 mb-2">
+    <input type="text" placeholder="1 KG" class="border-2 border-black w-full p-2 mb-4">
+    <button class="bg-black text-white w-full p-2">COMPRAR</button>
+  </div>
+</div>
+
+
 
 <nav class="my-6">
   <a href="{{ '/cafe-tostado/' | url }}" class="text-blue-500 hover:text-blue-600">← Café index</a>

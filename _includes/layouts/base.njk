@@ -3,8 +3,8 @@
 
 	{% include "components/head.njk" %}
 
-	<body class="bg-white text-black antialiased">
-		<div class="flex flex-col items-center justify-center min-h-screen p-4 bg-white">
+	<body class="bg-gray-100 text-black antialiased">
+		<div class="flex flex-col items-center justify-center min-h-screen p-4">
 			<header class="text-center">
 										<div class="w-full max-w-screen-md mx-auto">
 											<div class="flex justify-center items-center mb-4 mt-4">
@@ -22,5 +22,10 @@
 		{% include "components/footer.njk" %}
 		</div>
 	</body>
+<style>
+	.hard-shadow {
+	box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
 
+	</style>
 </html>
