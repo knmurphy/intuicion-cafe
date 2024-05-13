@@ -36,6 +36,10 @@ module.exports = function (eleventyConfig) {
     }, {});
   });
 
+  eleventyConfig.addCollection("tostados", function(collection) {
+    return collection.getFilteredByGlob("tostados/*.md");
+  });
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");

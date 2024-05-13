@@ -12,6 +12,16 @@ metaDescription: Dentro del mercado San Juan encontrarás una barra de café don
 eleventyNavigation:
     key: LOCAL19
     order: 2
+drinks:
+  - name: V60 Brew
+    description: A classic espresso drink with steamed milk
+    price: $3.99
+  - name: French Press
+    description: Equal parts espresso, steamed milk, and foam
+    price: $4.49
+  - name: Latte
+    description: Espresso with chocolate and steamed milk
+    price: $4.99
 ---
 
 Dentro del surreal mercado de San Juan, se encuentra LOCAL 19, un osasis urbano para amantes del café, cada sorbo es una historia.

@@ -3,22 +3,58 @@ layout: layouts/base.njk
 section: location
 ---
 
-<section class="mb-8">
+{# <section class="mb-8">
   <img class="w-full h-46 md:h-96 object-cover shadow-lg mb-4" src="/static/img/cover_local19.jpeg" alt="Local 19 cafe">
-  <div class="text-center">
+
     <!-- Adjusted text color for title to a warmer, softer brown -->
     <h2 class="text-3xl md:text-5xl font-bold text-brown-700">{{ title }}</h2>
     <!-- Adjusted address text, made it left-aligned and clickable link to Google Maps -->
-    <p class="text-left text-xl md:text-2xl text-brown-600"><a href="https://maps.google.com/?q={{ address }}" target="_blank">{{ address }}</a></p>
+    <p class="text-left text md:text-xl text-brown-600"><a href="https://maps.google.com/?q={{ address }}" target="_blank">{{ address }}</a></p>
     <!-- Added Instagram link -->
-    <p class="text-left text-lg text-brown-600"><a href="{{ instagram }}" target="_blank">Follow us on Instagram</a></p>
+    <p class="text-left text-lg"><a href="{{ instagram }}" target="_blank">Follow us on Instagram</a></p>
+</section> #}
+<section class="mb-8 px-4 md:px-0">
+  <img class="w-full h-46 md:h-96 object-cover shadow-lg mb-4" src="/static/img/cover_local19.jpeg" alt="Local 19 cafe">
+
+  <!-- Adjusted text color for title to a warmer, softer brown -->
+  <h2 class="text-3xl md:text-5xl font-bold text-brown-700 mb-2">{{ title }}</h2>
+  
+  <!-- Adjusted address text, replaced the icon with a map pin emoji -->
+  <div class="flex flex-col md:flex-row justify-between items-start md:items-center">
+    <p class="text-left text-sm md:text-base text-brown-600 flex items-center mb-4 md:mb-0 max-w-sm">
+      <span class="pr-2">📍</span>
+      <a href="https://maps.google.com/?q={{ address }}" target="_blank">{{ address }}</a>
+    </p>
+  
+    <!-- Added Instagram link with icon styling -->
+    <a href="{{ instagram }}" target="_blank" class="text-brown-700 text-2xl ml-4">
+      <i class="fab fa-instagram"></i>
+    </a>
   </div>
 </section>
-
-<section class="bg-warm-gray-50 py-8 px-4 md:py-12 md:px-8 shadow-lg rounded-xl">
+<section class="bg-white py-8 px-4 md:py-12 md:px-8">
+  <div class="max-w-xl md:max-w-7xl mx-auto text-center">
+    <div class="space-y-6">
+      <h2 class="text-3xl font-bold text-brown-700">Our Drinks</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {% for drink in drinks %}
+          <li class="p-4 rounded-lg">
+            <div class="flex justify-between items-center space-x-4">
+              <h3 class="text-lg font-bold text-brown-700">{{ drink.name }}</h3>
+              <p class="text-brown-600">{{ drink.price }}</p>
+            </div>
+            <p class="text-sm text-brown-600">{{ drink.description }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="bg-warm-gray-50 py-8 px-4 md:py-12 md:px-8">
   <div class="max-w-xl md:max-w-7xl mx-auto text-center">
     <div class="space-y-6">
       {{ layoutContent | safe }}
     </div>
   </div>
 </section>
+
