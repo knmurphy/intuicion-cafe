@@ -1,9 +1,9 @@
-# Sveltia CMS Configuration File
+# Decap CMS Configuration File
 
 # The backend option specifies how to access the content for your site
 backend:
   name: github
-  repo: knmurphy/intuicion.cafe # Path to your GitHub repository
+  repo: knmurphy/intuicion-cafe # Path to your GitHub repository
   # optional, defaults to master
   branch: master # The branch to update (optional; defaults to master)
 
