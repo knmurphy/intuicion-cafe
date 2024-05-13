@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/cafe-tostado.njk",
+  "permalink": "cafe-de-tostado/{{ title | slug }}/index.html",
+  "author": "Intucion",
+  "tags": ["Café Tostado"]
+}

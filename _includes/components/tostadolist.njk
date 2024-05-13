@@ -1,0 +1,36 @@
+<section>
+	{% for tostado in tostadolist | reverse %}
+		<article{% if tostado.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ tostado.url | url }}">
+					{% if tostado.data.title %}
+						{{ tostado.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if tostado.data.summary %}
+				<p>
+					{{ tostado.data.summary }}
+				</p>
+			{% endif %}
+			<p>
+				<time datetime="{{ tostado.date | machineDate }}">
+					<small>{{ tostado.date | readableDate }} by <a href="/authors/{{ tostado.data.author | slug }}/">{{ tostado.data.author }}</a></small>
+				</time>
+			</p>
+			{% if tostado.data.tags %}
+				<p>
+					{% for tag in tostado.data.tags %}
+		  			{%- if tag != "Cafe Tostado" -%}
+		  				{% set tagUrl %}/tags/{{ tag }}/{% endset %}
+		  			<a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+		  			{%- endif -%}
+					{% endfor %}
+				</p>
+			{% endif %}
+		</article>
+	{% endfor %}
+</section>
+
