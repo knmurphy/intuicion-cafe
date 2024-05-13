@@ -1,7 +1,7 @@
 ---
 title: This is the fourth example post
 metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.description will be used
+  your page/post's front matter, the default settings.description will be used
   instead.
 date: 2020-02-03
 author: John Doe

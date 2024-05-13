@@ -1,7 +1,7 @@
 ---
 title: This is the third example post which has a slightly longer title than the others
 metaDescription: This is a sample meta description. If one is not present in
-  your page/post's front matter, the default metadata.description will be used
+  your page/post's front matter, the default settings.description will be used
   instead.
 date: 2020-01-01
 author: Jane Doe
