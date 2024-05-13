@@ -35,7 +35,11 @@ module.exports = function (eleventyConfig) {
       return coll;
     }, {});
   });
-
+    // Add a collection for cafe
+  eleventyConfig.addCollection("cafe", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("cafe/*.md");
+  });
+  
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");

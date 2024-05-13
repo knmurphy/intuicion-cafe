@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Tienda Cafe
+permalink: /cafe/index.html
+---
+
+<h1>{{ title }}</h1>
+
+<ul>
+{% for item in collections.cafe %}
+  <li>
+    <h2><a href="{{ item.url }}">{{ item.data.title }}</a></h2>
+    <p>{{ item.data.summary }}</p>
+  </li>
+{% endfor %}
+</ul>

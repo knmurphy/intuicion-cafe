@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+section: cafe
+---
+
+<h1>{{ title }}</h1>
+
+{% for cafe in collections.cafe %}
+    <div>
+        <h2>{{ cafe.data.title }}</h2>
+        <p>{{ cafe.data.cafe.origin }}</p>
+        <p>{{ cafe.data.cafe.roastDate }}</p>
+        <p>{{ cafe.data.cafe.region }}</p>
+        <p>{{ cafe.data.cafe.finca }}</p>
+        <img src="{{ cafe.data.cafe.producerPhoto }}" alt="Producer Photo">
+        <p>{{ cafe.data.cafe.grower }}</p>
+        <p>{{ cafe.data.cafe.tostador }}</p>
+        <p>{{ cafe.data.cafe.altitude }}</p>
+        <p>{{ cafe.data.cafe.varietal }}</p>
+        <p>{{ cafe.data.cafe.bean }}</p>
+        <p>{{ cafe.data.cafe.process }}</p>
+        <p>{{ cafe.data.cafe.roast }}</p>
+        <p>{{ cafe.data.cafe.developed }}</p>
+        <p>{{ cafe.data.cafe.notes }}</p>
+        <button>Comprar Ahora</button>
+    </div>
+{% endfor %}
