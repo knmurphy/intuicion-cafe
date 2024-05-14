@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9f6e1e09-1b87-4933-b3f2-6853720a7af0/deploy-status)](https://app.netlify.com/sites/intuicioncafe/deploys)
 
+Switched out Decap CMS for Sveltia CMS
+
 ## Set Up Identity Email Templates
 
 In order for Netlify Identity service emails (Signup, Reset Password etc) to function correctly with Decap CMS, you will need to tell Netlify where your email templates are located.
