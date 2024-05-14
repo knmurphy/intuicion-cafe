@@ -3,25 +3,74 @@ layout: layouts/base.njk
 section: cafe
 ---
 
-<h1>{{ title }}</h1>
-
-{% for cafe in collections.cafe %}
-    <div>
-        <h2>{{ cafe.data.title }}</h2>
-        <p>{{ cafe.data.cafe.origin }}</p>
-        <p>{{ cafe.data.cafe.roastDate }}</p>
-        <p>{{ cafe.data.cafe.region }}</p>
-        <p>{{ cafe.data.cafe.finca }}</p>
-        <img src="{{ cafe.data.cafe.producerPhoto }}" alt="Producer Photo">
-        <p>{{ cafe.data.cafe.grower }}</p>
-        <p>{{ cafe.data.cafe.tostador }}</p>
-        <p>{{ cafe.data.cafe.altitude }}</p>
-        <p>{{ cafe.data.cafe.varietal }}</p>
-        <p>{{ cafe.data.cafe.bean }}</p>
-        <p>{{ cafe.data.cafe.process }}</p>
-        <p>{{ cafe.data.cafe.roast }}</p>
-        <p>{{ cafe.data.cafe.developed }}</p>
-        <p>{{ cafe.data.cafe.notes }}</p>
-        <button>Comprar Ahora</button>
+  <div class="max-w-sm mx-auto bg-white p-6 rounded-lg hard-shadow border border-black">
+  <div class="bg-purple-600 text-white p-4 rounded-lg mb-6">
+  <p class="text-xs text-white uppercase font-bold">{{ cafe.finca }} {{ cafe.region }}</p>
+  <h2 class="text-3xl text-white font-bold my-2 uppercase">{{ cafe.process }}</h2>
+  <p class="text-xs text-white font-bold uppercase">{{ cafe.origin }} / {{ cafe.grower }}</p>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Grower</dt>
+  <dd>
+    <div class="mt-4 mb-4 bg-white p-1 border border-gray-300 shadow-lg">
+      <div class="flex justify-center">
+        <img src="{{ cafe.producerPhoto | url }}" alt="{{ cafe.grower }}" class="w-full object-cover"/>
+      </div>
+      <div class="pt-2 pb-4 px-2 text-center">
+        <span class="block text-sm font-semibold">{{ cafe.grower }}</span>
+        <span class="block text-xxs text-gray-500">{{ cafe.finca }}, {{ cafe.origin }}</span>
+      </div>
     </div>
-{% endfor %}
+  </dd>
+</div>
+  <div class="grid grid-cols-2 gap-4 mb-6">
+    
+  <div class="coffee-detail">
+  <dt class="font-semibold">Roast Date</dt>
+  <dd><time datetime="{{ cafe.roastDate | machineDate }}">{{ cafe.roastDate | readableDate }}</time></dd>
+  </div>
+
+  <div class="coffee-detail">
+  <dt class="font-semibold">Notes</dt>
+  <dd>{{ cafe.notes }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Altitude</dt>
+  <dd>{{ cafe.altitude }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Varietal</dt>
+  <dd>{{ cafe.varietal }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Finca</dt>
+  <dd>{{ cafe.finca }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Origin</dt>
+  <dd>{{ cafe.origin }}</dd>
+  </div>
+  </div>
+  <div class="grid grid-cols-3 gap-4 mb-6">
+  <div class="coffee-detail">
+  <dt class="font-semibold">Region</dt>
+  <dd>{{ cafe.region }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Tostador</dt>
+  <dd>{{ cafe.tostador }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Bean</dt>
+  <dd>{{ cafe.bean }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Process</dt>
+  <dd>{{ cafe.process }}</dd>
+  </div>
+  <div class="coffee-detail">
+  <dt class="font-semibold">Roast</dt>
+  <dd>{{ cafe.roast }}</dd>
+  </div>
+  </div>
+  </div>

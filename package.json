@@ -3,10 +3,11 @@
   "version": "1.0.4",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "watch": "npx @11ty/eleventy --watch",
-    "serve": "npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy"
+    "build:css": "npx tailwindcss build -i ./_includes/assets/css/input.css -o ./_includes/assets/css/output.css",
+    "build": "npm run build:css && npx @11ty/eleventy",
+    "watch": "npm run build:css && npx @11ty/eleventy --watch",
+    "serve": "npm run build:css && npx @11ty/eleventy --serve",
+    "debug": "npm run build:css && DEBUG=* npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",

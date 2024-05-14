@@ -7,7 +7,7 @@
   <title>{{ title or settings.title }}</title>
   <meta name="description" content="{{ metaDescription or eleventyComputed.metaDescription or settings.description }}">
  {% set css %}
-      {% include "assets/css/inline.css" %}
+      {% include "assets/css/output.css" %}
     {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
